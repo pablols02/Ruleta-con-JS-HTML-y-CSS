@@ -1,0 +1,313 @@
+.navbar {
+    width: 100%;
+    min-height: 70px; /* Ajusta la altura en píxeles según tus necesidades */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.635); /* Agrega una sombra al navbar */
+}
+
+#fotoExit {
+    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
+    margin-left: 12px; /* Añade margen izquierdo para separar la imagen del texto */
+}
+
+#playBoton {
+    width: 18%; /* Ajusta el ancho de la imagen según tus preferencias */
+}
+
+#iconoSaldo {
+    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
+    margin-left: 10px; /* Añade margen izquierdo para separar la imagen del texto */
+}
+
+#clock {
+    padding-top: 10%;
+}
+
+.navbar-nav .nav-item {
+    font-size: 17px;
+    margin-right: 50px;
+}
+
+#inputModal {
+    border-color: #003cff;
+    border-radius: 20%;
+}
+
+#imagenRuleta {
+    width: 20%;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.8);
+    margin-left: 9%;
+    margin-top: 2%;
+    position: relative; /* Añadido */
+    z-index: 1; /* Añadido */
+}
+
+/* Estilo general de la tabla */
+table {
+    border-collapse: separate;
+    width: 50%; /* Reducción del ancho al 50% de su contenedor */
+    margin: 0 auto; /* Centra la tabla horizontalmente en el contenedor */
+    font-family: 'Abril Fatface';
+    font-size: 23px; /* Cambia la fuente de letra a Arial o la que prefieras */
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+/* Resto del código se mantiene igual */
+td {
+    border: 1.5px solid #ffffff;
+    padding: 10px; /* Añade relleno para dar espacio entre el borde y el contenido */
+    text-align: center;
+}
+
+.verde:hover, .rojo:hover, .negro:hover {
+    color: #00ff9d;
+    box-shadow: 0 0 50px rgba(0, 238, 255, 0.8);
+}
+
+td#vacio {
+    border: none;
+    background-color: transparent;
+}
+
+/* Estilo para las celdas con clase 'verde' */
+.verde {
+    background-image: url("imagenes/fondoverde.jpg");
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.8);
+}
+
+/* Estilo para las celdas con clase 'rojo' */
+.rojo {
+    background-image: url("imagenes/fondorojo.jpg");
+    color: white;
+}
+
+/* Estilo para las celdas con clase 'negro' */
+.negro {
+    background-image: url("imagenes/fondonegro.jpg");
+    color: white;
+}
+
+#contenedorFichas {
+    background-color: #090c37; /* Fondo azul oscuro */
+    border: 2px solid #80ff00; /* Borde con color de efecto neon */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior del contenedor */
+    text-align: center; /* Centrar contenido horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.7); /* Efecto de sombra tipo neon */
+    width: 500px; /* Ancho personalizado en píxeles */
+    display: flex; /* Usar un diseño de caja flexible para las fichas */
+    justify-content: space-between; /* Distribuir las fichas uniformemente */
+    margin-left:48%;
+    margin-top: 2%;
+}
+
+.ficha {
+    width: 18%; /* Ancho de las fichas */
+    margin: 0 2%; /* Margen horizontal entre las fichas */
+}
+
+#ficha20, #ficha50, #ficha100, #ficha500 {
+    max-width: 100%; /* Asegura que las fichas no superen el 100% del contenedor */
+}
+
+#ficha20:hover, #ficha50:hover, #ficha100:hover, #ficha500:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 174, 0.8);
+    border-radius: 100%;
+}
+
+.ficha-seleccionada {
+    box-shadow: 0 0 20px rgba(0, 255, 174, 0.8);
+    border-radius: 100%;
+}
+
+#clock {
+    color: white;
+}
+
+#contenedorDatos {
+    background-color: #090c37; /* Fondo azul oscuro */
+    color: white;
+    border: 2px solid #80ff00; /* Borde con color de efecto neon */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior del contenedor */
+    text-align: center; /* Centrar contenido horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.7); /* Efecto de sombra tipo neon */
+    width: 500px; /* Ancho personalizado en píxeles */
+    display: flex; /* Usar un diseño de caja flexible para las fichas */
+    justify-content: space-between; /* Distribuir las fichas uniformemente */
+    margin-top: 10px;
+    font-family: 'Abril Fatface';
+    margin-left:48%;
+    margin-top: 1%;
+}
+
+#contenedorBotones {
+    background-color: #090c37; /* Fondo azul oscuro */
+    border: 2px solid #80ff00; /* Borde con color de efecto neon */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior del contenedor */
+    text-align: center; /* Centrar contenido horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.7); /* Efecto de sombra tipo neon */
+    width: 200px; /* Ancho personalizado en píxeles */
+    height: 180px;
+    margin-left:82%;
+    margin-top: -11.8%;
+    display: block;
+}
+
+#botonBorrar,
+#botonPlay {
+    flex: 1;
+    width: 90%;
+    height: 45%;
+    margin: 2%;
+    border: 2px solid #80ff00;
+    border-radius: 15px;
+    background-color: #090c37;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit';
+}
+
+#botonBorrar:hover,
+#botonPlay:hover {
+    background-color: #80ff00;
+    color: #090c37;
+}
+
+#segundos,#dosPuntos {
+    color: white;
+    font-family: 'Kanit';
+    font-size: 20px;
+}
+
+#centesimas {
+    color: white;
+    font-family: 'Kanit';
+    font-size: 20px;
+}
+
+#cuentaAtras {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    margin-left: 55%;
+    margin-top: -42%;
+}
+
+.progress-bar {
+    background-color: #80ff00 !important;
+}
+
+.tiempo {
+    text-align: center;
+}
+
+
+#contenedorCalientes {
+    background-image: url("imagenes/fondoFuego.jpg"); /* Fondo azul oscuro */
+    border: 2px solid #ff0000; /* Borde con color de efecto neon */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior del contenedor */
+    text-align: center; /* Centrar contenido horizontalmente */
+    box-shadow: 0 0 30px rgba(255, 106, 0, 0.7); /* Efecto de sombra tipo neon */
+    width: 500px; /* Ancho personalizado en píxeles */
+    display: flex; /* Usar un diseño de caja flexible para las fichas */
+    justify-content: space-between; /* Distribuir las fichas uniformemente */
+    margin-left: 3%;
+}
+
+#contenedorFrios {
+    background-image: url("imagenes/fondoHielo.jpg"); /* Fondo azul oscuro */
+    border: 2px solid #003cff; /* Borde con color de efecto neon */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior del contenedor */
+    text-align: center; /* Centrar contenido horizontalmente */
+    box-shadow: 0 0 30px rgba(112, 176, 255, 0.7); /* Efecto de sombra tipo neon */
+    width: 500px; /* Ancho personalizado en píxeles */
+    display: flex; /* Usar un diseño de caja flexible para las fichas */
+    justify-content: space-between; /* Distribuir las fichas uniformemente */
+    margin-left: 3%;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    font-family: 'Abril Fatface';
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.circle0 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 102, 0);
+}
+
+.circle1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 135);
+}
+
+.circle2 {
+    width: 50px; /* Aumenté el ancho para dejar espacio y mantener la forma */
+    height: 50px; /* Aumenté la altura para dejar espacio y mantener la forma */
+    font-family: 'Abril Fatface';
+    border-radius: 50%;
+    background-color: #090c37;;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; /* Asegura que el texto esté centrado verticalmente */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#contenedorUltimosNumeros {
+    background-color: #090c37;
+    border: 2px solid #80ff00;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.7);
+    width: 500px; /* Mantuve el ancho fijo del contenedor */
+    display: flex;
+    flex-wrap: nowrap; /* Evita que se envuelva a la siguiente línea */
+    margin-top: 1.5%;
+    margin-left: 3%;
+}
+
+.circuloBola {
+    width: 113px;
+    height: 113px;
+    font-family: 'Abril Fatface';
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 34%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Añadido */
+    opacity: 0;
+}
+
+.desactivado {
+    pointer-events: none; /* Deshabilita los eventos del mouse en el tablero */
+    opacity: 0.7; /* Puedes bajar la opacidad para indicar visualmente que está desactivado */
+    /* Otros estilos que desees aplicar para indicar que el tablero está desactivado */
+}
